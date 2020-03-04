@@ -1,0 +1,12 @@
+{
+    "name": "nian88/ci3-hmvc-single-core",
+    "description": "Codegniter",
+    "homepage": "https://niandev.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Azharnian",
+            "email": "azharnian@gmail.com"
+        }
+    ]
+}
