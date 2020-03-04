@@ -1,0 +1,27 @@
+{
+  "name": "dakon",
+  "authors": [
+    "Fanani M. Ihsan <fanani.mi@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "plugins",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "3.3.7",
+    "PACE": "pace#^1.0.2",
+    "Formstone": "^1.4.16",
+    "chosen": "^1.8.7",
+    "datatables.net": "^1.10.9",
+    "datatables.net-bs4": "^1.10.9",
+    "datatables.net-responsive": "^2.2.3",
+    "datatables.net-scroller": "^2.0.1"
+  }
+}
