@@ -91,9 +91,10 @@ $autoload['drivers'] = array();
 
 
 // $autoload['helper'] array();
-// $helper=array();
-foreach (glob("../application/helpers/*.php") as $filename) {
-    $nama = str_replace("../application/helpers/", "", $filename);
+$helper=array();
+$pathx = explode("config/",dirname( realpath( __FILE__ ) ) . DIRECTORY_SEPARATOR)[0];
+foreach (glob($pathx."helpers/*.php") as $filename) {
+    $nama = str_replace($pathx."helpers/", "", $filename);
     $nama = str_replace("_helper.php", "", $nama);
     $helper[] = $nama;
 }
@@ -142,8 +143,9 @@ $autoload['language'] = array();
 |
 |	$autoload['model'] = array('first_model' => 'first');
 */
-foreach (glob("../application/models/*.php") as $filename) {
-    $nama = str_replace("../application/models/", "", $filename);
+$models = array();
+foreach (glob($pathx."models/*.php") as $filename) {
+    $nama = str_replace($pathx."models/", "", $filename);
     $nama = str_replace(".php", "", $nama);
     $models[] = $nama;
 }
