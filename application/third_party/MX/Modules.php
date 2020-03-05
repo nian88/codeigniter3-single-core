@@ -6,11 +6,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 global $CFG;
 
 /* get module locations from config settings or use the default module location and offset */
+// $exdir = explode("appscomposer",APPPATH);//1 Folder
+// $exdir = "/mnt/datakerja/website/";
+$exdir = $_ENV['CI_SYSTEM'];
+// $exdir = explode("appscomposer",APPPATH);
 $modul_folder = $_ENV['CI_APPS'];
 is_array(Modules::$locations = $CFG->item('modules_locations')) OR Modules::$locations = array(
-	'../'.$modul_folder.'/' => '../../'.$modul_folder.'/',
+	// $exdir[0].$modul_folder.'/' => '../../../'.$modul_folder.'/', //Server up 1 Folder
+	$exdir.$modul_folder.'/' => '../../../'.$modul_folder.'/', //Server up 1 Folder
 );
-
+print_r($exdir);
 
 /* PHP5 spl_autoload */
 spl_autoload_register('Modules::autoload');
