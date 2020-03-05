@@ -239,7 +239,7 @@ $config['log_threshold'] = 1;
 | application/logs/ directory. Use a full server path with trailing slash.
 |
 */
-$config['log_path'] = $_ENV['CI_APPS']."logs";
+$config['log_path'] = $_ENV['CI_APPS']."logs/";
 
 /*
 |--------------------------------------------------------------------------
