@@ -1,12 +1,12 @@
 {
-  "name": "dakon",
+  "name": "niandev",
   "authors": [
-    "Fanani M. Ihsan <fanani.mi@gmail.com>"
+    "Azharnian <azharnian@gmail.com>"
   ],
   "description": "",
   "main": "",
   "license": "MIT",
-  "homepage": "",
+  "homepage": "http://www.niandev.com",
   "ignore": [
     "**/.*",
     "node_modules",

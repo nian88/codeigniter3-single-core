@@ -1,10 +1,10 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 function _tglIndo($tgl){
   $arrBulan=array("","Jan","Feb","Mar","Apr","Mei","Jun","Jul","Agu","Sep","Okt","Nov","Des");
-  $tanggal  = date("d",strtotime($tgl));  
-  $bulan  = $arrBulan[date("n",strtotime($tgl))];  
-  $tahun  = date("Y",strtotime($tgl));  
-  return $tanggal ." ".$bulan." ".$tahun;  
+  $tanggal  = date("d",strtotime($tgl));
+  $bulan  = $arrBulan[date("n",strtotime($tgl))];
+  $tahun  = date("Y",strtotime($tgl));
+  return $tanggal ." ".$bulan." ".$tahun;
 }
 function _tglEng($tgl){
   // 17-11-2018

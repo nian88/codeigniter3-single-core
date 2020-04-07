@@ -203,10 +203,10 @@ class JSMin {
    * @return string
    */
   function min($js) {
-  	
+
   	$this->input       = str_replace("\r\n", "\n", $js);
     $this->inputLength = strlen($this->input);
-  	
+
     $this->a = "\n";
     $this->action(self::ACTION_DELETE_A_B);
 

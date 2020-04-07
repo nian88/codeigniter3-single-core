@@ -7,7 +7,7 @@
    }
 	function _getDistanceBetweenPoints($lokasi) {
 	// function _getDistanceBetweenPoints($lat1, $lon1, $lat2, $lon2) {
-		
+
 		$lokasi = explode(",", $lokasi);
 		$lat1=$lokasi[0];
 		// return $lat1;

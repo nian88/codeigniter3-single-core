@@ -74,7 +74,7 @@ $active_group = "local";
 $query_builder = TRUE;
 
 $db['local'] = array(
-	'dsn'=> '', 
+	'dsn'=> '',
     'dbdriver' => $_ENV['CI_DBDRIVER'],
 	'hostname' => $_ENV['CI_DBHOST'],
 	'port'=> $_ENV['CI_DBPORT'],

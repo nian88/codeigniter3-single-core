@@ -11,7 +11,7 @@
 	{
 		$a=(string)$harga; //membuat $harga menjadi string
 		$len=strlen($a); //menghitung panjang string $a
-	 
+
 		if ( $len <=18 )
 		{
 			$ratril=$len-3-1;
@@ -19,7 +19,7 @@
 			$rajut=$len-9-1; //untuk mengecek apakah ada nilai ratusan juta (9angka dari belakang)
 			$juta=$len-12-1; //untuk mengecek apakah ada nilai jutaan (6angka belakang)
 			$ribu=$len-15-1; //untuk mengecek apakah ada nilai ribuan (3angka belakang)
-	 
+
 			$angka='';
 			for ($i=0;$i<$len;$i++)
 			{

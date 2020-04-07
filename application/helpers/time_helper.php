@@ -5,8 +5,8 @@
 		$checkin = new DateTime(date($strcheckin));
 		$duration = $checkout->diff($checkin);
 
-		$dayInMinutes = $duration->d * 	24 * 60; 
-		$HourInMinutes = $duration->h * 60 ; 
-		$minutesInMinutes = $duration->i ; 
+		$dayInMinutes = $duration->d * 	24 * 60;
+		$HourInMinutes = $duration->h * 60 ;
+		$minutesInMinutes = $duration->i ;
 		print_r($dayInMinutes + $HourInMinutes + $minutesInMinutes);
    }

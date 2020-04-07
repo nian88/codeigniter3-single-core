@@ -1,3 +1,3 @@
 <?php
 /* Custom Routes */
-$route['nadas'] = "welcome";
+$route['nada'] = "welcome";

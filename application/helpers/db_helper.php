@@ -23,7 +23,7 @@ function getBackup($download=true,$tables=array(),$ignore=array(),$insert=true) 
 
 	$ci->load->dbutil();
 	$backup=$ci->dbutil->backup($prefs);
-	
+
 	if ($download==true) {
 		$ci->load->helper('download');
 		force_download($namaFile, $backup);
@@ -39,8 +39,8 @@ function getBackup($download=true,$tables=array(),$ignore=array(),$insert=true) 
 	}
 
 }
-function getRestore($filename)    
-{               
+function getRestore($filename)
+{
     $ci =& get_instance();
 	$isi_file = file_get_contents('backupdb/' .$filename ); //PANGGIL FILE YANG TERUPLOAD
 	$string_query = rtrim( $isi_file, "\n;" );

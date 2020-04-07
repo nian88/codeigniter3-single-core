@@ -8,17 +8,19 @@ global $CFG;
 /* get module locations from config settings or use the default module location and offset */
 
 $exdir = (isset($_ENV['CI_SYSTEM']))?$_ENV['CI_SYSTEM']:die("Set Variable CI_SYSTEM di env");
-$modul_folder = (isset($_ENV['CI_APPS']))?$_ENV['CI_APPS']:die("Set Variable CI_APPS di env");;
+$modul_folder = (isset($_ENV['CI_APPS']))?$_ENV['CI_APPS']:die("Set Variable CI_APPS di env");
 $nada = explode("/",$exdir);
-$pathx="../";
+$pathIn="";
+$pathOut="../";
 foreach(array_filter($nada) as $val){
-	$pathx .= "../";
+	$pathIn .= "../";
+	$pathOut .= "../";
 }
-$pathx = $pathx.$modul_folder.'/';
-// print_r($pathx);
+$api = $modul_folder;
 is_array(Modules::$locations = $CFG->item('modules_locations')) OR Modules::$locations = array(
-	$exdir.$modul_folder.'/' => $pathx.'/', //Server up 1 Folder
+	$pathIn.$api => $pathOut.$api, //Server up 1 Folder
 );
+
 
 /* PHP5 spl_autoload */
 spl_autoload_register('Modules::autoload');

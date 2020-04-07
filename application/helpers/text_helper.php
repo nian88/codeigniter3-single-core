@@ -3,23 +3,23 @@
 			return md5($var);
 	}
 	function ConLevelUser($user){
-		$level = json_decode(LEVEL_ADMIN); 
+		$level = json_decode(LEVEL_ADMIN);
 		return $level[$user];
 	}
 	function ConHariIna($angka){
-		$hari = json_decode(HARI_INA); 
+		$hari = json_decode(HARI_INA);
 		return $hari[$angka];
 	}
 	function ConHariEng($angka){
-		$hari = json_decode(HARI_ENG); 
+		$hari = json_decode(HARI_ENG);
 		return $hari[$angka];
 	}
 	function ConBulanEng($angka){
-		$bln = json_decode(BULAN_ENG); 
+		$bln = json_decode(BULAN_ENG);
 		return $bln[$angka];
 	}
 	function ConBulanIna($angka){
-		$bln = json_decode(BULAN_INA); 
+		$bln = json_decode(BULAN_INA);
 		return $bln[$angka];
 	}
 	function ConJekel($angka=2){
